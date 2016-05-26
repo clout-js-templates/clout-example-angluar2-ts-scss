@@ -1,0 +1,39 @@
+{
+  "name": "clout-example-angluar2-ts-scss",
+  "version": "0.0.1",
+  "description": "Example Clout-JS application with Angular 2, Typescript and SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/clout-js-templates/clout-example-angluar2-ts-scss.git"
+  },
+  "keywords": [
+    "clout-js",
+    "example",
+    "angular",
+    "scss",
+    "typescript"
+  ],
+  "author": "Muhammad Dadu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clout-js-templates/clout-example-angluar2-ts-scss/issues"
+  },
+  "homepage": "https://github.com/clout-js-templates/clout-example-angluar2-ts-scss#readme",
+  "dependencies": {
+    "clout-js": "^1.0.7"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mocha-test": "^0.12.7",
+    "grunt-nodemon": "^0.4.2",
+    "load-grunt-tasks": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
