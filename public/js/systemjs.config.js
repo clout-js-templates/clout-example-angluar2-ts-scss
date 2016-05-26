@@ -6,17 +6,17 @@
 (function(global) {
   var ngVer = '@2.0.0-rc.1'; // lock in the angular package version; do not let it float to current!
 
-  //map tells the System loader where to look for things
+  // map tells the System loader where to look for things
   var map = {
     'app':                        'app',
-    '@angular':                   'https://npmcdn.com/@angular', // sufficient if we didn't pin the version
-    'angular2-in-memory-web-api': 'https://npmcdn.com/angular2-in-memory-web-api', // get latest
-    'rxjs':                       'https://npmcdn.com/rxjs@5.0.0-beta.6',
-    'ts':                         'https://npmcdn.com/plugin-typescript@4.0.10/lib/plugin.js',
-    'typescript':                 'https://npmcdn.com/typescript@1.8.10/lib/typescript.js',
+    '@angular':                   '//npmcdn.com/@angular', // sufficient if we didn't pin the version
+    'angular2-in-memory-web-api': '//npmcdn.com/angular2-in-memory-web-api', // get latest
+    'rxjs':                       '//npmcdn.com/rxjs@5.0.0-beta.6',
+    'ts':                         '//npmcdn.com/plugin-typescript@4.0.10/lib/plugin.js',
+    'typescript':                 '//npmcdn.com/typescript@1.8.10/lib/typescript.js',
   };
 
-  //packages tells the System loader how to load when no filename and/or no extension
+  // packages tells the System loader how to load when no filename and/or no extension
   var packages = {
     'app':                        { main: 'main.ts',  defaultExtension: 'ts' },
     'rxjs':                       { defaultExtension: 'js' },
@@ -38,7 +38,7 @@
   // Add map entries for each angular package
   // only because we're pinning the version with `ngVer`.
   ngPackageNames.forEach(function (pkgName) {
-    map['@angular/'+pkgName] = 'https://npmcdn.com/@angular/' + pkgName + ngVer;
+    map['@angular/'+pkgName] = '//npmcdn.com/@angular/' + pkgName + ngVer;
   });
 
   // Add package entries for angular packages
